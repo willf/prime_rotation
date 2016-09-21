@@ -34,8 +34,8 @@ for base in range(2, 17):
             if ok:
                 rots = list(rotations(s, 0))
                 base_10_rots = [int(rotation, base) for rotation in rots]
-                for rotation in rots:
-                    found.add(int(rotation, base))
+                for rotation in base_10_rots:
+                    found.add(rotation)
                 print(base,
                       '[' + ", ".join(sorted(list(set(rots)))) + ']',
                       sorted(list(set(base_10_rots))), )

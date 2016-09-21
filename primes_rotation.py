@@ -18,8 +18,6 @@ primes = set()
 for line in sys.stdin:
     primes.add(int(line))
 
-base = 2
-
 for base in range(2, 17):
     found = set()
     for p in primes:
